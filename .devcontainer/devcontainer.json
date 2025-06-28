@@ -1,0 +1,21 @@
+{
+    "name": "Django DevContainer (Ubuntu 24.04)",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    // "postCreateCommand": "django-admin --version || echo 'Django not found'",
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.defaultProfile.linux": "bash",
+          "python.defaultInterpreterPath": "/opt/venv/bin/python",
+          "python.linting.enabled": true,
+          "python.linting.pylintEnabled": true
+        },
+        "extensions": [
+          "ms-python.python",
+          "ms-python.vscode-pylance"
+        ]
+      }
+    }
+  }
